@@ -65,4 +65,4 @@ jobs:
           path: dist/
 
       - name: Publish release distributions to PyPI
-        run: poetry publish --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
+        run: python -m poetry publish --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
